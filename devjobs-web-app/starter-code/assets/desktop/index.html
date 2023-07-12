@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div>
+        <div class="logo" align="left">
+            <img src="logo.svg">
+            <ul class="active" id="toggle">
+              <li><img src="icon-sun.svg"></li>
+              <li><img src="Rectangle.svg"></li>
+              <li><img src="icon-moon.svg"></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <div class="searchbar">
+      <input type="search" placeholder="Filter by title,companies,expertise...">
+      <input type="filter">
+      <input type="checkbox">
+      <label for="checkbox">Full Tine Only</label>
+
+    </div>
+          
+    
+
+
+
+    <script>
+      const body = document.querySelector('body');
+      const toggle = document.getElementById('toggle');
+      toggle.onclick = function(){
+        toggle.classList.toggle('active')
+        body.classList.toggle('active')
+      }
+    </script>
+</body>
+</html>
