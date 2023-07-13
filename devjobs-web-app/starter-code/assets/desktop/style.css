@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body{
     padding: 0%;
     margin: 0%;
-    background-color: #19202D;
+    background-color: #121721;
     justify-content: center;
     align-items: center;
 }
@@ -31,6 +37,7 @@ div ul{
     list-style: none;
     float: right;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 div ul li{
@@ -40,9 +47,65 @@ div ul li{
     vertical-align: center;
 }
 
-div .searchbar{
-    color: #19202D;
-    width: 80%;
+.container{
+    width: 100%;
+    min-height: 228px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 90px;
+    gap: 10px;
+}
+
+.white{
+    color: #FFF;
+    font-family: Kumbh Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.grey{
+    color: #6E8098;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blue{
+    color: #5964E0;
+    font-family: Kumbh Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container .content-section .card{
+    background-color: #19202D;
+    border-radius: 6px;
+    flex: 1;
+    margin: 20px 20x;
+    row-gap: 20px;
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .content-section{
+        flex-direction: column;
+    }
 }
