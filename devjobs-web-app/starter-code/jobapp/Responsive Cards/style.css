@@ -1,0 +1,43 @@
+#container{
+    background-color:#F4F6F8;
+}
+
+div#container.active{
+    background-color: #121721;
+}
+
+header{
+    background-image: url('c:/Users/RASHID/Desktop/jobapp/Responsive Cards/bg-pattern-header.svg');
+    position: relative;
+    border-bottom-left-radius: 100px;
+    transform-origin: 0 0;
+}
+
+body.active{
+    background-color: #121721;
+}
+
+.logo{
+    margin: auto;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+div ul{
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+div ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    vertical-align: center;
+}
+
+$light: #F4F6F8;
+$dark: #121721;
+
+@import "bootstrap";
